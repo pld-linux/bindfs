@@ -10,6 +10,7 @@ URL:		https://bindfs.org/
 BuildRequires:	libfuse3-devel >= 3.4.0
 BuildRequires:	pkgconfig >= 1:0.9.0
 Requires:	libfuse3 >= 3.4.0
+Requires:	libfuse3-tools >= 3.4.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
