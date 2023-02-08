@@ -1,11 +1,11 @@
 Summary:	Mount a directory elsewhere with changed permissions
 Name:		bindfs
-Version:	1.17.1
+Version:	1.17.2
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	https://bindfs.org/downloads/%{name}-%{version}.tar.gz
-# Source0-md5:	ce57e2e3c5f5851a2c2ab93eff6d3a77
+# Source0-md5:	9c76790ae2437d87bbc07e1ea1beefea
 URL:		https://bindfs.org/
 BuildRequires:	libfuse3-devel >= 3.4.0
 BuildRequires:	pkgconfig >= 1:0.9.0
