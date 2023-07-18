@@ -1,11 +1,12 @@
 Summary:	Mount a directory elsewhere with changed permissions
+Summary(pl.UTF-8):	Montowanie katalogu w innym miejscu z innymi uprawnieniami
 Name:		bindfs
-Version:	1.17.3
+Version:	1.17.4
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	https://bindfs.org/downloads/%{name}-%{version}.tar.gz
-# Source0-md5:	103faa429e931097f6a51bdb856c1a8d
+# Source0-md5:	b125b5f2248837450bd0355ef00d21c8
 URL:		https://bindfs.org/
 BuildRequires:	libfuse3-devel >= 3.4.0
 BuildRequires:	pkgconfig >= 1:0.9.0
@@ -25,6 +26,18 @@ Some things bindfs can be used for:
 - Modifying permission bits using rules with chmod-like syntax.
 - Changing the permissions with which files are created.
 
+%description -l pl.UTF-8
+bindfs to system plików FUSE do odwzorowania lustrzanego katalogu w
+innym katalogu, podobnie do mount --bind. Uprawnienia źródłowego
+katalogu mogą być jednak modyfikowane na różne sposoby.
+
+Niektóre zastosowania bindfs:
+- uczynienie katalogu będącym tylko do odczytu
+- uczynienie wszystkich programów niewykonywalnymi
+- współdzielenie katalogu z listą użytkowników (lub grup)
+- zmodyfikowanie bitów uprawnień przy użyciu reguł o składni jak chmod
+- zmiana uprawnień, z jakimi są tworzone pliki
+
 %prep
 %setup -q
 
@@ -42,6 +55,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc ChangeLog README.md
+%doc ChangeLog README.md TODO
 %attr(755,root,root) %{_bindir}/bindfs
 %{_mandir}/man1/bindfs.1*
