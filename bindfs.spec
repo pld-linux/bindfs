@@ -1,12 +1,12 @@
 Summary:	Mount a directory elsewhere with changed permissions
 Summary(pl.UTF-8):	Montowanie katalogu w innym miejscu z innymi uprawnieniami
 Name:		bindfs
-Version:	1.18.1
+Version:	1.18.2
 Release:	1
 License:	GPL v2+
 Group:		Applications/System
 Source0:	https://bindfs.org/downloads/%{name}-%{version}.tar.gz
-# Source0-md5:	a7360be0850ebd26197ccd5726f8c21a
+# Source0-md5:	b5f906e8affb2e5737f9d8dcefe0e3f3
 URL:		https://bindfs.org/
 BuildRequires:	libfuse3-devel >= 3.4.0
 BuildRequires:	pkgconfig >= 1:0.9.0
